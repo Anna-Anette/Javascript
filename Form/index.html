@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!--script src="js/vendor/modernizr-2.6.2.min.js"></script-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="form clearfix">
+            <hr>
+            <h3>This is main form:</h3>
+            <hr>
+            <form action="" class="clearfix" id="form">
+                <label for="message">Enter the banner message:</label>
+                <input type="text" name="message" id="message" onblur="validateMessageLength(1,32, this, document.getElementById('error_alert'))" />
+                <p id="error_alert" class="error_alert"> </p>
+
+                <label for="zip_code">Enter ZIP code of the location:</label>
+                <input type="text" name="zip_code" id="zip_code" onblur="validateZipCode(this,document.getElementById('error_alert_zip'))" />
+                <p id="error_alert_zip" class="error_alert"> </p>
+
+                <label for="date">Enter the date of message to be shown:</label>
+                <input type="text" name="date" id="date" onblur="validateDate(this, document.getElementById('error_alert_date'))" />
+                <p class="error_alert" id="error_alert_date"> </p>
+
+                <label for="user_name">Enter your name:</label>
+                <input type="text" name="user_name" id="user_name" onblur="validateClientName(this, document.getElementById('error_alert_name'))" />
+                <p class="error_alert" id="error_alert_name"> </p>
+
+                <label for="phone_number">Enter your phone number:</label>
+                <input type="text" name="phone_number" id="phone_number" onblur="validatePhoneNumber(this, document.getElementById('error_alert_phone'))" />
+                <p class="error_alert" id="error_alert_phone"> </p>
+
+                <label for="email">Enter your E-mail address:</label>
+                <input type="email" name="email" id="email" onblur="validateEmail(this, document.getElementById('error_alert_email'))"/>
+                <p class="error_alert" id="error_alert_email"> </p>
+
+                <input type="button" value="Send my order" class="send_button" onclick="placeOrder(this.form);"/>
+                <p class="error_alert" id="error_alert_submit"> </p>
+                <hr>
+            </form>
+        </div>
+
+
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script-->
+    </body>
+</html>

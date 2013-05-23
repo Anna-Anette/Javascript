@@ -1,0 +1,136 @@
+/* line 2, ../sass/style.scss */
+.face {
+  border: 2px solid #a9a9a9;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 400px;
+  background-color: #dcdcdc;
+}
+/* line 9, ../sass/style.scss */
+.face .hour {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: auto;
+  border-radius: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -20px;
+  font-weight: bold;
+  font-size: 26.66667px;
+  line-height: 36.36364px;
+  background-color: #2f4f4f;
+  color: #f5f5f5;
+}
+/* line 24, ../sass/style.scss */
+.face .hour.one {
+  top: 7%;
+  left: 74%;
+}
+/* line 25, ../sass/style.scss */
+.face .hour.two {
+  top: 23%;
+  left: 89%;
+}
+/* line 26, ../sass/style.scss */
+.face .hour.three {
+  top: 50%;
+  right: 0;
+  margin-left: 0;
+  margin-top: -20px;
+}
+/* line 27, ../sass/style.scss */
+.face .hour.four {
+  top: 65%;
+  left: 90%;
+}
+/* line 28, ../sass/style.scss */
+.face .hour.five {
+  top: 83%;
+  left: 74%;
+}
+/* line 29, ../sass/style.scss */
+.face .hour.six {
+  top: 90%;
+  left: 50%;
+}
+/* line 30, ../sass/style.scss */
+.face .hour.seven {
+  top: 82%;
+  left: 25%;
+}
+/* line 31, ../sass/style.scss */
+.face .hour.eight {
+  top: 65%;
+  left: 10%;
+}
+/* line 32, ../sass/style.scss */
+.face .hour.nine {
+  top: 50%;
+  left: 0;
+  margin-left: 0;
+  margin-top: -20px;
+}
+/* line 33, ../sass/style.scss */
+.face .hour.ten {
+  top: 23%;
+  left: 11%;
+}
+/* line 34, ../sass/style.scss */
+.face .hour.eleven {
+  top: 7%;
+  left: 26%;
+}
+/* line 35, ../sass/style.scss */
+.face .hour.twelve {
+  top: 0;
+  left: 50%;
+}
+/* line 37, ../sass/style.scss */
+.face .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #2f4f4f;
+  border-radius: 80px;
+}
+/* line 48, ../sass/style.scss */
+.face .minutes_arrow, .face .hours_arrow, .face .seconds_arrow {
+  position: absolute;
+  width: 13.33333px;
+  height: 142.85714px;
+  left: 4px;
+  bottom: 50%;
+  background-color: #32cd32;
+  -moz-transform: rotate(0deg);
+  -moz-transform-origin: bottom center;
+  border-radius: 80px;
+}
+/* line 58, ../sass/style.scss */
+.face .hours_arrow {
+  background-color: #2e8b57;
+  width: 20px;
+  height: 80px;
+  -moz-transform: rotate(0deg);
+}
+/* line 59, ../sass/style.scss */
+.face .seconds_arrow {
+  background-color: #adff2f;
+  width: 11.42857px;
+  height: 160px;
+  -moz-transform: rotate(0deg);
+}
+
+/* line 62, ../sass/style.scss */
+.header {
+  color: red;
+  font-size: 100px;
+  padding: 5px;
+  display: inline-block;
+}

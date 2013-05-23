@@ -1,0 +1,33 @@
+.form {
+    width: 900px;
+    float: left;
+    padding:0 20px;
+}
+.form label,
+.form input{
+    float: left;
+}
+.form label {
+    width: 300px;
+}
+.form input {
+    width: 300px;
+    margin-left: 0px;
+    border: 1px solid #222222;
+    margin-bottom: 10px;
+}
+.error_alert {
+    font-size: 10px;
+    line-height: 1.5;
+    float: left;
+    margin: 2px 0 0 4px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    float:left;
+    width: 280px;;
+}
+input.send_button {
+    float: none;
+    margin: 0 301px;
+}
