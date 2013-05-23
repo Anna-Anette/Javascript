@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <div class="calc_outer">
+            <table>
+                <tr>
+                    <td class="input" id="" colspan="4">
+                        <input type="text" name="input" id="input" pattern="[[\d]*|[\d]*[\.]{1?}[\d]*[+\-*/]{1}[\d]*|[\d]*[\.]{1}[\d]*]*">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="operation" id="divide">/</td>
+                    <td class="operation" id="multiply">*</td>
+                    <td class="operation" id="subtract">-</td>
+                    <td class="operation" id="add">+</td>
+                </tr>
+                <tr>
+                    <td class="digit">7</td>
+                    <td class="digit">8</td>
+                    <td class="digit">9</td>
+                    <td class="remove"><<</td>
+                </tr>
+                <tr>
+                    <td class="digit">4</td>
+                    <td class="digit">5</td>
+                    <td class="digit">6</td>
+                    <td class="clear">C</td>
+                </tr>
+                <tr>
+                    <td class="digit">1</td>
+                    <td class="digit">2</td>
+                    <td class="digit">3</td>
+                    <td id="equals" rowspan="2">=</td>
+                </tr>
+                <tr>
+                    <td class="operation" id="dot">.</td>
+                    <td class="digit zero" colspan="2">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

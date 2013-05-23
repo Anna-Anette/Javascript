@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "TrebuchetMS";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/247509.eot?#iefix") format("embedded-opentype"), url("../fonts/247509.woff") format("woff"), url("../fonts/247509.ttf") format("truetype"), url("../fonts/247509.svg#247509") format("svg");
+}
+
+@font-face {
+  font-family: "Dunkirk";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/dunkirk.eot?#iefix") format("embedded-opentype"), url("../fonts/dunkirk.woff") format("woff"), url("../fonts/dunkirk.ttf") format("truetype"), url("../fonts/dunkirk.svg#dunkirk") format("svg");
+}
+
+@font-face {
+  font-family: "DroidSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/droidsans.eot?#iefix") format("embedded-opentype"), url("../fonts/droidsans.woff") format("woff"), url("../fonts/droidsans.ttf") format("truetype"), url("../fonts/droidsans.svg#droidsans") format("svg");
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/chess_board.jpg" alt="chess-board" id="board" />
+        <div id="figure" class="figure pawn">P</div>
+        <label for="coords_input"></label><input type="text" value="" placeholder="coordinates" id="coords_input">
+        <input type="button" value="Move" id="move_button">
+		<div id="coords"></div>
+    </div>
+    <script type="text/javascript" src="chess.js"></script>
+	 <script src="http://code.jquery.com/jquery-latest.js"></script>
+	 <script>
+		$(document).bind('click',function(e){
+			$("#coords").text("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY);
+		});
+	</script>
+</body>
+</html>

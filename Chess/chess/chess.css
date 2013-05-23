@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+
+}
+#board {
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+#figure {
+    background-color: red;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    left: 96px;
+    position: absolute;
+    text-align: center;
+    top: 434px;
+    border-radius:20px;
+}

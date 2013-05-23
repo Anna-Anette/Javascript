@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css.css"/>
+	<title></title>
+	<style type="text/css">
+		#elem {background-color:yellow; width: 50px;height: 50px;position: relative;
+		top:0;left:0;}
+	</style>
+</head>
+<body>
+	<div id="elem">
+	123
+	</div>
+	<input type="button" value= "blue"/>
+		<script type="text/javascript">
+		
+		var startTime = (new Date()).getTime(); 
+		
+		var elem = document.getElementById("elem");
+		var left = 0;
+		function move() {	
+			var currentTime = (new Date()).getTime(); 		
+			left = (currentTime - startTime)*0.04;
+			console.log(left);
+			elem.style.left = left + 'px'; 
+			if(left>=200) {
+				return;
+			}
+			setTimeout(move, 25);
+		}
+		move();
+		</script>
+	</body>
+</html>
